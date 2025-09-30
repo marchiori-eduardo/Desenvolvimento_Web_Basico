@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 header {
     background-color: #163853;
     padding: 30px;
@@ -15,29 +16,6 @@ header > h1 {
     padding-bottom: 20px;
 }
 
-main {
-    background-color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 98.9vw;
-    max-width: 4000px;
-    /* max-height: 1vw */
-    margin: auto;
-    /* height: ; */
-}
-
-.menu {
-    background-color: #d6d6d6;
-    box-shadow: 1px 0px 5px;
-    padding: 2rem;
-    padding-bottom: 100vw;
-    margin-right: 2rem;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-} 
-
 .cabecalho {
     color: #ffff;
 }
@@ -45,21 +23,59 @@ header > h2 {
     font-size: larger;
 }
 
+main {
+    background-color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 2500px;
+    
+}
+
+.menu {
+    background-color: #d6d6d6;
+    box-shadow: 1px 0px 5px;
+    padding: 2rem;
+    padding-bottom: 50vh;
+    margin-right: rem;
+    box-sizing: border-box; /* evita estouro de altura ao somar padding */
+    min-width: 13vw;
+}
+
+nav p {
+    font-size: 1.1em;
+} 
+
+nav > h3 {
+    margin-bottom: 10px;
+    border-style: groove;
+    border-top: #272222;
+    border-left: #272222;
+    border-right: #272222;
+    border-color: #000000;
+}
+
+.container {
+    display: flex; /* deixa a div flexivel*/
+    flex-direction: row;  /*organiza os itens da pagina lado a lado  */
+} 
+
+
 .item-menu {
     padding: 0.1rem;
     margin:  0.7rem 0rem 0.7rem 0;
     list-style: none;
+    font-size: 1.1em;
+
     
 }
 
 .item-menu > a {
     text-decoration:none;
-    color: #272222;
+    color: #000000;
 
 }
 
 .item-menu > a:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.514);
     text-decoration: underline;
     transition: 1s;
     border-radius: 4px;
@@ -67,8 +83,18 @@ header > h2 {
 }
 
 .item-menu:hover {
-    background-color: #163753bd;
+    background-color: #1f527ebd;
     transition: 0.7s;
+    border-radius: 4px;
+
+}
+
+.ul_section {
+    list-style-position: inside;
+    padding-left: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+
 }
 
 section p {
@@ -85,11 +111,18 @@ section h2 {
     border-left: #272222;
     border-right: #272222;
     border-color: #163853;
+    margin-top: 25px;
+}
+
+section h4 {
+    text-indent: 8px;
 }
 
 .conteudo {
     padding: 10px;
     width: 75vw;
+    margin-left: auto;   
+    margin-right: auto;  
 }
 
 footer > p {
@@ -103,6 +136,16 @@ footer {
     
 }
 
-footer > p > span {
+.links {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a > span {
     font-weight: bolder;
 }
