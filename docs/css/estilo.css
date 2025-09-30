@@ -1,18 +1,18 @@
-* {
+* { /*Definições globais*/
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-header {
+header {/*cores e espaçamento*/
     background-color: #163853;
     padding: 30px;
     padding-bottom: 20px;
 }
 
-header > h1 {
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.404);
+header > h1 { /* sombras e espaçamento interno*/
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.404); 
     padding-bottom: 20px;
 }
 
@@ -30,7 +30,7 @@ main {
     
 }
 
-.menu {
+.menu { /*sombras e tamanhos*/
     background-color: #d6d6d6;
     box-shadow: 1px 0px 5px;
     padding: 2rem;
@@ -42,9 +42,11 @@ main {
 
 nav p {
     font-size: 1.1em;
+    line-height: 1.7em;
+
 } 
 
-nav > h3 {
+nav > h3 { /*configurações de linhas/bordas de separação */
     margin-bottom: 10px;
     border-style: groove;
     border-top: #272222;
@@ -53,28 +55,26 @@ nav > h3 {
     border-color: #000000;
 }
 
-.container {
+.container { /*div vertical*/
     display: flex; /* deixa a div flexivel*/
     flex-direction: row;  /*organiza os itens da pagina lado a lado  */
 } 
 
 
-.item-menu {
+.item-menu { /*Índice*/
     padding: 0.1rem;
     margin:  0.7rem 0rem 0.7rem 0;
     list-style: none;
     font-size: 1.1em;
-
-    
 }
 
-.item-menu > a {
+.item-menu > a { /*links índices*/
     text-decoration:none;
     color: #000000;
 
 }
 
-.item-menu > a:hover {
+.item-menu > a:hover { /*pseudoelementos de cursor em cima de links do indice*/
     color: rgba(255, 255, 255, 0.514);
     text-decoration: underline;
     transition: 1s;
@@ -82,14 +82,14 @@ nav > h3 {
     
 }
 
-.item-menu:hover {
+.item-menu:hover { /*transição estetica*/
     background-color: #1f527ebd;
     transition: 0.7s;
     border-radius: 4px;
 
 }
 
-.ul_section {
+.ul_section { /*config de listas não ordenadas*/
     list-style-position: inside;
     padding-left: 1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -97,14 +97,14 @@ nav > h3 {
 
 }
 
-section p {
+section p { /*padronização de parágrafos das seções*/
     line-height: 1.7em;
     margin: 13px 0px;
     text-align: justify;
     font-size: 1.1em;
 }
 
-section h2 {
+section h2 { /*configurações de linhas/bordas de separação */
     color: #163853;
     border-style: groove;
     border-top: #272222;
@@ -114,11 +114,11 @@ section h2 {
     margin-top: 25px;
 }
 
-section h4 {
+section h4 { /*espaço inicial do texto*/
     text-indent: 8px;
 }
 
-.conteudo {
+.conteudo { /*centralização e definição de largura do conteudo*/
     padding: 10px;
     width: 75vw;
     margin-left: auto;   
@@ -139,6 +139,8 @@ footer {
 .links {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    line-height: 1.7em;
+
 }
 
 footer a {
