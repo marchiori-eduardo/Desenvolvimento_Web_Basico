@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f0f2f5; /* Um fundo suave */
+            font-family: 'Inter', sans-serif; /* Fonte moderna */
+        }
+        
+        main {
+            max-width: 700px; /* Limita a largura para melhor leitura */
+        }
+
+        /* Animação suave para a aparição dos resultados */
+        #secao-resultado {
+            display: none; /* Começa escondido */
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .card-header {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+   <header class="bg-dark text-white text-center p-4 container-fluid ">
+        <div class="container p-3 rounded-3 bg-secondary w-100 text-center">
+            <h1 class="display-5">🎮 Game Web -- Quiz Games 🎮</h1>
+            <p class="lead">Teste seus conhecimentos sobre o mundo dos Games!</p>
+        </div>
+    </header>
+
+    <main class="container my-5 flex-grow-1"> 
+
+        <section id="secao-quiz">
+
+            <form id="formQuiz" class="shadow p-4 rounded-3 bg-white" novalidate>
+
+                <div id="messagem-validacao"></div>
+
+                <div class="card mb-4  border-info shadow-sm">
+                    <div class="card-header bg-info text-white">
+                        Pergunta 1
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Qual destes exemplos é um jogo da Rockstar Games?  </h5>
+                        <p class="card-text">Pense bem, um deles é um dos melhores jogos</p>
+
+                         <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1-a" value="GOW" required>
+                            <label class="form-check-label" for="q1-a">God of War (2018)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1-b" value="cyber">
+                            <label class="form-check-label" for="q1-b">CyberPunk 2077</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1-c" value="rdr2">
+                            <label class="form-check-label" for="q1-c">Red Dead Redemption 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1-d" value="witcher">
+                            <label class="form-check-label" for="q1-d">The Witcher 3</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="card mb-4 border-warning shadow-sm">
+                    <div class="card-header bg-warning text-white">
+                        Pergunta 2
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Qual destes exemplos é um jogo da Rockstar Games?  </h5>
+                        <p class="card-text">Pense bem, um deles é um dos melhores jogos</p>
+    
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="q2" id="q2-a" value="gow" >
+                            <label class="form-check-label" for="q2-a">God of War (2018)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="q2" id="q2-b" value="cyber">
+                            <label class="form-check-label" for="q2-b">CyberPunk 2077</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="q2" id="q2-c" value="rdr2">
+                            <label class="form-check-label" for="q2-c">Red Dead Redemption 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="q2" id="q2-d" value="witcher">
+                            <label class="form-check-label" for="q2-d">The Witcher 3</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-success shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        Pergunta 3
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-title"></div>
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3-a" value="pulp-fiction" required>
+                                <label class="form-check-label" for="q3-a">Pulp Fiction</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3-b" value="titanic">
+                                <label class="form-check-label" for="q3-b">Titanic</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3-c" value="matrix">
+                                <label class="form-check-label" for="q3-c">Matrix</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3-d" value="o-rei-leao">
+                                <label class="form-check-label" for="q3-d">O Rei Leão</label>
+                            </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="w-100 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg w-50 mx-auto rounded-4 fs-4 shadow">Ver Resultado!</button>
+                </div>                
+                
+            </form>
+        </section>
+    </main>
+    
+
+    <script src="js/index.js"></script>
+</body>
+</html>
