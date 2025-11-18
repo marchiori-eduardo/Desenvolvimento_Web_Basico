@@ -12,5 +12,5 @@ function onOff() {
     }
     else {    
         document.getElementById('lampad').src='img/pic_bulboff.png';
-    }
+    }    
 }
