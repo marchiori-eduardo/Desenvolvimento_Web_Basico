@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Prova 2</title>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <header class="bg-dark text-white text-center p-4 container-fluid ">
+        <h1 class="display-5 text-center pb-2 mb-4">Meus estilos musicais</h1>
+        <nav class="container text-center mb-0 rounded-3 pb-0 bg-dark text-center row w-55 ">
+            <a href="#est-mus" class="btn text-light col-3 rounded-3 bg-secondary mx-2">Meus estilos</a>
+            <a href="#perguntas" class="btn text-light col-3 rounded-3 bg-secondary mx-2">Perguntas</a>
+            <a href="#desenvolvedor" class=" btn text-light col-3 rounded-3 bg-secondary mx-2">Desenvolvedor</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="container my-5 flex-grow-1 shadow p-4 rounded-3 bg-white mb-5">
+            <section id="est-mus">
+                <article class="row mb-4">
+                    <h3 class="text center pb-3" >Meus estilos</h3>
+                    <p class="text-center">Sou uma pessoa que curte vários estillos musicais, mas os principais são: </p>
+
+                    <div class="col-6  bg-light border text-center rounded-3">
+                        <h3 class=" display-5 text-success bg-light ">sertanejo</h3>
+                        <p class="bg-success rounded-3">Artista: Gusttavo Lima</p>
+                    </div>
+                    <div class="col-6 rounded-3 bg-light border text-center">
+                        <h3 class=" display-5 text-warning bg-light">modão</h3>
+                        <p class="bg-warning rounded-3"> Artistas: Leandro e Leonardo</p>
+
+                    </div>
+                </article>
+            </section>
+            <section class="mb-5">
+
+                <h3 class="text center" id="perguntas">Perguntas</h3>
+                <form  >
+        
+                    <div class="card mb-4  border-success shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            Pergunta 1 
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Qual seu nome?</h5>
+                            <p></p>
+                            <div class="form-check">
+                                <input class="form-control w-75" type="input" name="nome" id="nome" placeholder="Seu nome" required>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="card mb-4  border-warning shadow-sm">
+                        <div class="card-header bg-warning text-white">
+                            Pergunta 2
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Qual seu estilo musical? </h5>
+                            <p></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estilo" value="Sertanejo" required>
+                                <label class="form-check-label">Sertanejo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estilo"  
+                                value="Rock" required>
+                                <label class="form-check-label">Rock</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estilo" value="Mpb"  required>
+                                <label class="form-check-label">Mpb</label>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                    <div class="container text-center">
+                        <button class="btn btn-success" type="button" onclick="mensagem()">Enviar</button>
+                    </div>
+                    <div id="result"></div>
+                </form>
+            </section>
+
+            <section id="desenvolvedor">
+                <h3>Desenvolvedor</h3>
+                <p>Meu nome é Eduardo lima Marchiori, eu desenvolvi este site web, curso engenharia de software este é meu <a href="https://www.linkedin.com/in/marchiori-eduardo" > linkedin</a>.</p>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="js/index.js"></script>
+</html>
